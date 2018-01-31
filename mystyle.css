@@ -25,7 +25,7 @@ h2{
   margin:0 auto 0 auto;
 }
 
-#nav {
+#nav, #contact {
   list-style: none;
   padding:0;
 }
@@ -34,20 +34,35 @@ h2{
   /* text-decoration: none; */
 }
 
-#nav a:link {
+#nav a:link, #contact a:link {
   text-decoration:none;
   color:#ffffff;
   background-color: #C70039;
   font-weight: bold;
   text-align: center;
   display: block;
+  padding: 4px;
 }
 
-#contact {
+#contact li{
   text-decoration:none;
   color:#ffffff;
   background-color: #C70039;
   text-align: center;
   display: block;
   font-weight: bold;
+  padding: 4px;
+}
+
+img {
+  border:0;
+}
+
+ul {padding: 0}
+
+#nav a:hover, #nav a:active {
+	background-color: #1CC2CD;
+}
+#contact a:hover, a:active {
+  background-color: #1CC2CD;
 }
