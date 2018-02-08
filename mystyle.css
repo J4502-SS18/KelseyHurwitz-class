@@ -3,18 +3,22 @@
   color:blue;
 } */
 p {
-  color:#C70039;
-  font-family: Verdana, Arial, sans-serif;
+  color:#540032;
+  /* font-family: 'Nanum Myeongjo',"Times New Roman", serif; */
+  font-family: 'Lora', "Times New Roman", serif;
 }
 
 h1 {
-  font-family: "Palatino Linotype", "Times New Roman",serif;
-  color: #C70039;
+  font-family: 'Lora', "Times New Roman", serif;
+  font-style: italic;
+font-weight:bold;
+  color: #f0433a;
 }
-h2{
+h3 {
   /* font-family:"Courier New", Courier, monospace; */
-  font-family:"Alex Brush",cursive,serif;
-  color: #1CC2CD;
+  font-family: 'Lora', "Times New Roman",serif;
+  font-weight:bold;
+  color: #820333;
 }
 #container {
   width:90%;
@@ -36,8 +40,9 @@ h2{
 
 #nav a:link, #contact a:link {
   text-decoration:none;
-  color:#ffffff;
-  background-color: #C70039;
+  color:#dceff5;
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  background-color: #c9283e;
   font-weight: bold;
   text-align: center;
   display: block;
@@ -46,8 +51,8 @@ h2{
 
 #contact li{
   text-decoration:none;
-  color:#ffffff;
-  background-color: #C70039;
+  color:#dceff5;
+  background-color: #c9283e;
   text-align: center;
   display: block;
   font-weight: bold;
@@ -61,8 +66,8 @@ img {
 ul {padding: 0}
 
 #nav a:hover, #nav a:active {
-	background-color: #1CC2CD;
+	background-color: #f0433a;
 }
 #contact a:hover, a:active {
-  background-color: #1CC2CD;
+  background-color: #f0433a;
 }
