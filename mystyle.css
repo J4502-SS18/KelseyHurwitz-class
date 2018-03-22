@@ -29,24 +29,30 @@ h3 {
   margin:0 auto 0 auto;
 }
 
-#nav, #contact {
+/* #nav, #contact {
   list-style: none;
   padding:0;
 }
 
 #nav li {
   /* text-decoration: none; */
-}
 
-#nav a:link, #contact a:link {
+
+ul {
+  list-style-type: none;
+}
+.navigation a, #contact a {
   text-decoration:none;
+  margin:0;
+  list-style-type: none;
   color:#dceff5;
   font-family: 'Quicksand', Helvetica, sans-serif;
   background-color: #c9283e;
   font-weight: bold;
   text-align: center;
-  display: block;
   padding: 4px;
+  display: flex;
+  flex-flow: column;
 }
 
 #contact li{
@@ -65,9 +71,97 @@ img {
 
 ul {padding: 0}
 
-#nav a:hover, #nav a:active {
+.navigation a:hover, .navigation a:active {
 	background-color: #f0433a;
 }
-#contact a:hover, a:active {
+#contact a:hover, #a:active {
   background-color: #f0433a;
+}
+
+img {
+  100%
+}
+
+
+/*Setting up flexible boxes for our content*/
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header, article, aside, footer {
+  flex: 1 100%;
+  padding: 0px;
+}
+
+
+
+/*These styles activate when the page is larger than 800px wide*/
+
+@media (min-width:600px) {
+
+  .navigation {
+    display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      flex-flow: row;
+      background-color: #c9283e;
+  }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation a:hover {
+    	background: pink;
+    }
+
+.text {
+  display: flex;
+  flex:1 auto;
+}
+
+.joke {
+  display: flex;
+  flex: -1 auto;
+}
+
+img {
+  display: flex;
+  flex:0 auto;
+}
+
+
+    /*These styles apply to the floated image technique*/
+
+            /*========================
+
+            img {
+                width: 45%;
+                float: left;
+                margin-right: 10px;
+            }
+
+            .first {
+                margin-top: 0;
+            }
+
+            =======================*/
+
+    /*These styles apply to the Flexbox image technique */
+/*
+    article {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+    } */
+
+    /*This code is for the first image attempt -- the object-fit property*/
+    /*img {
+        width: 45%;
+        object-fit: contain;
+    }*/
+
+
 }
