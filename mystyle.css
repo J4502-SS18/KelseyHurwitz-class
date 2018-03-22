@@ -65,7 +65,7 @@ ul {
   padding: 4px;
 }
 
-img {
+.image {
   border:0;
 }
 
@@ -78,7 +78,7 @@ ul {padding: 0}
   background-color: #f0433a;
 }
 
-img {
+.image {
   100%
 }
 
@@ -90,7 +90,7 @@ img {
     flex-flow: row wrap;
 }
 
-header, article, aside, footer {
+header, .text, .joke, .image {
   flex: 1 100%;
   padding: 0px;
 }
@@ -119,49 +119,39 @@ header, article, aside, footer {
 
 .text {
   display: flex;
+  flex-direction: row;
   flex:1 auto;
+  width: 45%;
+  order: 3;
 }
 
 .joke {
   display: flex;
-  flex: -1 auto;
+  flex-direction: row;
+  flex: 1 auto;
+  width: 20%
+  order: 1;
 }
 
-img {
+.image {
   display: flex;
-  flex:0 auto;
+    flex-direction: row;
+  flex:1 auto;
+  order: 2;
+
 }
 
+.image {
+      width: 60%;
+      margin-right: 10px;
+  }
 
-    /*These styles apply to the floated image technique*/
 
-            /*========================
+  .wrapper {
+      display: flex;
+      flex-flow: row wrap;
+  }
 
-            img {
-                width: 45%;
-                float: left;
-                margin-right: 10px;
-            }
-
-            .first {
-                margin-top: 0;
-            }
-
-            =======================*/
-
-    /*These styles apply to the Flexbox image technique */
-/*
-    article {
-        display: flex;
-        flex-flow: row;
-        flex-wrap: wrap;
-    } */
-
-    /*This code is for the first image attempt -- the object-fit property*/
-    /*img {
-        width: 45%;
-        object-fit: contain;
-    }*/
 
 
 }
