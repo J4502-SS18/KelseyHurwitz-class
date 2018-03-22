@@ -79,7 +79,7 @@ ul {padding: 0}
 }
 
 .image {
-  100%
+  width: 100%;
 }
 
 
@@ -129,7 +129,7 @@ header, .text, .joke, .image {
   display: flex;
   flex-direction: row;
   flex: 1 auto;
-  width: 20%
+  width: 20%;
   order: 1;
 }
 
