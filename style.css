@@ -138,9 +138,7 @@ nav ul {
   flex-flow: column;
 }
 
-.authorbox {
-display: none;
-}
+
 
 .pullquote {
   display: none;
@@ -164,27 +162,7 @@ nav ul {
   }
 
 }
-/* 
-@media screen and (min-width: 600px) {
 
-#container {
-  width: 80%;
-}
-
-.authorbox img {
-  display: block;
-  width:100%;
-  margin-top: 0.5em;
-}
-
-.authorbox {
-  width: 25%;
-  max-width: 200px;
-  float: left;
-  margin-right: 20px;
-}
-
-} */
 
 @media screen and (min-width: 800px) {
 
@@ -193,18 +171,6 @@ nav ul {
     width: 80%;
   }
 
-  .authorbox img {
-    display: block;
-    width:100%;
-    margin-top: 0.5em;
-  }
-
-  .authorbox {
-    width: 25%;
-    max-width: 200px;
-    float: left;
-    margin-right: 20px;
-  }
 
 .item1 {
 margin-right: auto;
@@ -232,10 +198,7 @@ margin: 5px;
     ". d d";
   }
 
-  .authorbox {
-    width: 100%;
-    grid-area: a;
-  }
+
 
   .section1 {
     grid-area: b;
