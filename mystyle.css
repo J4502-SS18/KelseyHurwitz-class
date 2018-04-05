@@ -97,9 +97,9 @@ header, .text, .joke, .image {
 
 
 
-/*These styles activate when the page is larger than 800px wide*/
+/*These styles activate when the page is larger than 600px wide*/
 
-@media (min-width:600px) {
+@media screen and (min-width:400px) {
 
   .navigation {
     display: flex;
@@ -152,6 +152,32 @@ header, .text, .joke, .image {
       flex-flow: row wrap;
   }
 
+}
 
+@media screen and (min-width: 600px) {
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+    "a b b"
+    "c c e"
+    ". d d";}
+
+
+
+.joke {
+  grid-area:b;
+
+}
+
+.image {
+  grid-area:c;
+}
+
+.text {
+  grid-area:d;
+}
 
 }
