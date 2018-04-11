@@ -28,10 +28,31 @@ p {
     margin-bottom: 0.8em;
 }
 
+nav ul li {
+    display: block;
+    border-top: 1px #79896d solid;
+}
+
+nav a {
+    color: #f8ecc2;
+    display: block;
+    text-decoration: none;
+    padding: 20px 30px;
+}
+
+
 aside p {
     font-size: 0.8em;
     line-height: 1.2em;
 }
+
+nav ul {
+    display: none;
+}
+
+
+
+
 
 .caption {
     font-size: 0.7em;
@@ -160,6 +181,31 @@ nav ul {
   flex-flow: row;
   justify-content: space-between;
   }
+
+}
+
+@media screen and (min-width: 450px){
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        border-top: none;
+    }
+
+    .menu-trigger {
+        display: none;
+    }
+
+    header h1 {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+        background-color: teal;
+    }
 
 }
 
