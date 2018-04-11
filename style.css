@@ -30,6 +30,7 @@ p {
 
 nav ul li {
     display: block;
+
     border-top: 1px #79896d solid;
 }
 
@@ -179,6 +180,13 @@ article:last-of-type {
   border-bottom: none;
 }
 
+@media screen and (max-width: 450px) {
+  nav ul {
+    display: none;
+  }
+
+}
+
 @media screen and (min-width: 450px) {
 
 nav ul {
@@ -210,7 +218,6 @@ nav ul {
         order: 2;
         background-color: teal;
     }
-
 
 }
 
